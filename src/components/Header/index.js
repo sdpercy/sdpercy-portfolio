@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from '../Nav';
 
 function Header(props) {
-    const { currentTab, setCurrentTab } = props;
+    const { currentCategory, setcurrentCategory } = props;
 
     return (
         <header>
@@ -11,7 +11,7 @@ function Header(props) {
             </div>
             <div>
                 <Nav 
-                currentTab={currentTab} setCurrentTab={setCurrentTab}>
+                currentCategory={currentCategory} setcurrentCategory={setcurrentCategory}>
                 </Nav>
             </div>
         </header>
