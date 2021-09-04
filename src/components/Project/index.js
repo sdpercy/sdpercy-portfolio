@@ -43,5 +43,6 @@ function Project(props) {
             </div>    
         </Card>
     );
-
 }
+
+export default Project;
