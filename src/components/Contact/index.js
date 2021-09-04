@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { validateEmail } from '../../utils/helpers';
 
-function ContactForm() {
+function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
   const [errorMessage, setErrorMessage] = useState('');
@@ -36,13 +36,28 @@ function ContactForm() {
     }
   };
 
+  const handleBlank = (e) => {
+    if (e.target.name === 'Name' || e.target.name === 'Message'){
+      if (!e.target.value.length){
+        setErrorMessage(`${e.target.name} is required.`);
+      }else {
+        setErrorMessage('');
+      }
+    }
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log('Handle Form', formState);
+    }
+  }
+
   return (
     <section>
-      <h1 data-testid="h1tag">Contact me</h1>
+      <h1>Contact me</h1>
+      <div>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+          <input type="text" name="name" defaultValue={name} onBlur={handleBlank} />
         </div>
         <div>
           <label htmlFor="email">Email address:</label>
@@ -50,17 +65,18 @@ function ContactForm() {
         </div>
         <div>
           <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+          <textarea name="message" rows="5" defaultValue={message} onBlur={handleBlank} />
         </div>
         {errorMessage && (
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <button type="submit">Submit</button>
       </form>
+      </div>
     </section>
   );
 }
 
-export default ContactForm;
+export default Contact;

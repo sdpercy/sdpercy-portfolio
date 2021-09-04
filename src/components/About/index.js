@@ -2,12 +2,12 @@ import React from 'react';
 
 function About() {
   return (
-    <section className="my-5">
+    <section>
       <h1 id="about">Scott Percy</h1>
       <div>
-        <img src={require('../../assets/profile_pic.jpg')} alt="about-me" className="profile" />
+        <img src={require('../../assets/images/profile_pic.jpg')} alt="about-me" className="profile" />
       </div>
-      <div className="my-2">
+      <div className="description">
         <p>
         My name is Scott Percy.  I am a born and raised Newfoundlander and I currently live in Torbay Newfoundland 
         a small town just outside St John’s.  I have a degree in Geology and an IT Diploma from 

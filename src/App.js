@@ -1,3 +1,4 @@
+import "./App.css";
 import React, { useState } from 'react';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -12,13 +13,13 @@ const [currentCategory, setCurrentCategory] = useState('about');
 const category = () => {
   switch (currentCategory) {
     case "about":
-      return <About/>;
+      return <About />;
     case "portfolio":
-      return <Portfolio/>;
+      return <Portfolio />;
     case "contact":
-      return <Contact/>;
+      return <Contact />;
     case "resume":
-      return <Resume/>;
+      return <Resume />;
       default:
         return null;
   }
@@ -26,20 +27,20 @@ const category = () => {
 
 
 return (
-  <div>
     <div>
-        <Header currentCategory={currentCategory} setCurrentCategory={setCurrentCategory}></Header>
+        <div>
+            <Header currentCategory={currentCategory} setCurrentCategory={setCurrentCategory}></Header>
+        </div>
+        <div>
+            <main>
+              {category()}
+            </main>
+        </div>
+        <div>
+          <Footer></Footer>
+        </div>
     </div>
-    <div>
-        <main>
-          {category()}
-        </main>
-    </div>
-    <div>
-      <Footer></Footer>
-    </div>
-  </div>
-);
+  );
 }
 
 export default App;

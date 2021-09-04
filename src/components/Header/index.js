@@ -10,9 +10,7 @@ function Header(props) {
                 <h2>Scott's Portfolio</h2>
             </div>
             <div>
-                <Nav 
-                currentCategory={currentCategory} setcurrentCategory={setcurrentCategory}>
-                </Nav>
+                <Nav currentCategory={currentCategory} setcurrentCategory={setcurrentCategory}></Nav>
             </div>
         </header>
     );
