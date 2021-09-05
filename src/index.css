@@ -4,11 +4,11 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #060d72;
-  --secondary: #f3a847;
+  --primary: #324376;
+  --secondary: #F68E5F;
   --tertiary: #b12704;
   --light: #fafafa;
-  --dark: #b6c5e0;
+  --dark: #586BA4;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -89,7 +89,7 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background: var(--primary);
 }
 
 header a {
@@ -293,7 +293,8 @@ a {
 .logo {
   width: 50px;
   height: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
@@ -303,7 +304,14 @@ a {
   margin-bottom: 50px;
 }
 
+.nature{
+  width: 50%;
+  height: 50%;
+}
+
+
 .footer {
+  background: var(--primary);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
