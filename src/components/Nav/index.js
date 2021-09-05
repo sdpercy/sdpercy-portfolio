@@ -14,7 +14,7 @@ function Nav(props) {
   return (
       <nav>
             <ul className="flex-row">
-                 <li className={currentTab === "about" ? "mx-2 navActive" : "mx-2"}>
+                 <li className={currentCategory === "about" ? "mx-2 navActive" : "mx-2"}>
                     <span onClick={() => setCurrentCategory("about")}> About Me </span>
                 </li>
 
