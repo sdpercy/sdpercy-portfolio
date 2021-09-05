@@ -36,19 +36,6 @@ function Contact() {
     }
   };
 
-  const handleBlank = (e) => {
-    if (e.target.name === 'Name' || e.target.name === 'Message'){
-      if (!e.target.value.length){
-        setErrorMessage(`${e.target.name} is required.`);
-      }else {
-        setErrorMessage('');
-      }
-    }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
-    }
-  }
 
   return (
     <section>
@@ -57,7 +44,7 @@ function Contact() {
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleBlank} />
+          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
         <div>
           <label htmlFor="email">Email address:</label>
@@ -65,7 +52,7 @@ function Contact() {
         </div>
         <div>
           <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleBlank} />
+          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
         {errorMessage && (
           <div>

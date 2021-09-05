@@ -8,23 +8,23 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 
 function App(){
-  const [currentCategory, setCurrentCategory] = useState('about');
+  const [currentCategory, setCurrentCategory] = useState("about");
 
-  const category = () => {
-    switch (currentCategory) {
-      case "about":
-        return <About />;
-      case "portfolio":
-        return <Portfolio />;
-      case "contact":
-        return <Contact />;
-      case "resume":
-        return <Resume />;
-      default:
-          return null;
-    }
-  };
-
+	
+	const category = () => {
+		switch (currentCategory) {
+			case "about":
+				return <About />;
+			case "portfolio":
+				return <Portfolio />;
+			case "contact":
+				return <Contact />;
+			case "resume":
+				return <Resume />;
+			default:
+				return null;
+		}
+	};
 
   return (
       <div>

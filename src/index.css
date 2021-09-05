@@ -297,6 +297,12 @@ a {
   cursor: pointer;
 }
 
+.profile{
+  width: 350px;
+  height:450px;
+  margin-bottom: 50px;
+}
+
 .footer {
   display: flex;
   flex-wrap: wrap;

@@ -2,12 +2,19 @@ import React from 'react';
 
 
 function Nav(props) {
-  const { currentCategory, setCurrentCategory } = props;
+    
+  const { 
+    setCurrentCategory,  
+    currentCategory,
+  } = props; 
+    
+
+
 
   return (
       <nav>
             <ul className="flex-row">
-                <li className= {currentCategory === "about" ? "mx-2 navActive" : "mx-2"}>
+                 <li className= {currentCategory === "about" ? "mx-2 navActive" : "mx-2"}>
                     <span onClick={() => setCurrentCategory("about")}> About Me </span>
                 </li>
                 <li className= {currentCategory === "portfolio" ? "mx-2 navActive" : "mx-2"}>
@@ -18,7 +25,7 @@ function Nav(props) {
                 </li>
                 <li className= {currentCategory === "resume" ? "mx-2 navActive" : "mx-2"}>
                     <span onClick={() => setCurrentCategory("resume")}> Resume </span>
-                </li>
+                </li> 
             </ul>
       </nav>
     );
