@@ -28,8 +28,8 @@ function Project(props) {
     }
     
     return (
-        <Card style={{ width: "18rem"}}>
-            <Card.Img variant="top" src={require(`../../assets/images/${image}`)} className="card-image" ></Card.Img>
+        <Card style={{ width: "30rem"}}>
+            <Card.Img variant="top" src={require(`../../assets/images/${image}`).default} className="card-image" ></Card.Img>
 
             <div>
                 <Card.Body>
@@ -37,9 +37,9 @@ function Project(props) {
                     <Card.Text className="card-text">{description}</Card.Text>
                     <Card.Subtitle className="card-subtitle"> Technology Used</Card.Subtitle>
                     <Card.Text className="card-technology">{getTechnology(technology)}</Card.Text>
-                    <Card.Link href={deployedApp} target="_blank" className="card-link">  {name} App </Card.Link>
+                    <Card.Link href={deployedApp} target="_blank" className="card-link">  {name} Application </Card.Link>
                     <br></br>
-                    <Card.Link href={repo} target="_blank" className="card-link"> {name} Github </Card.Link>
+                    <Card.Link href={repo} target="_blank" className="card-link"> {name} Repository </Card.Link>
                 </Card.Body>
 
             </div>    

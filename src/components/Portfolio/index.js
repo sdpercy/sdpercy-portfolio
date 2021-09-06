@@ -2,6 +2,7 @@ import React from 'react';
 import Project from '../Project';
 
 
+
 //---------template-----------
     // {
     //   name: '', 
@@ -28,6 +29,19 @@ function Portfolio() {
         'dotenv',],  
       deployedApp: 'https://waste-management-project2.herokuapp.com/',
       repo:'https://github.com/Group05-Project02/waste-management'
+    },
+    {
+      name: 'NUTRIQUOTIENT', 
+      description:'A product waste managing web application which allows business owners to manage their kitchen waste in order to lower their overhead costs and also decrease their carbon footprint.', 
+      image: 'mainpage.JPG', 
+      technology: ['HTML',
+        'Zurb Foundation',
+        'Javascript',
+        'JQuery',
+        'Server-Side API',
+        ],  
+      deployedApp: 'https://foodisfuel.github.io/gp5_project1/',
+      repo:'https://github.com/foodisfuel/gp5_project1'
     }
   ];
   return (
@@ -36,9 +50,9 @@ function Portfolio() {
           <li>
             <Project projects={projects[0]}></Project>
           </li>
-          {/* <li>
+          <li>
             <Project projects={projects[1]}></Project>
-          </li> */}
+          </li> 
         </ul>
         {/* <ul className="flex-row">
           <li>
