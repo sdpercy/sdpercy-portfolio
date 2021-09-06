@@ -1,9 +1,8 @@
 import React from 'react';
 import Project from '../Project';
 
-function Portfolio() {
-  const projects = [
-    //---------template-----------
+
+//---------template-----------
     // {
     //   name: '', 
     //   description:'', 
@@ -12,10 +11,14 @@ function Portfolio() {
     //   deployedApp:'',
     //   repo:'',
     // },
+
+function Portfolio() {
+  const projects = [
+    
     {
       name: 'WASTEAWAY', 
       description:'A product waste managing web application which allows business owners to manage their kitchen waste in order to lower their overhead costs and also decrease their carbon footprint.', 
-      image:'wasteaway.JPG', 
+      image: 'wasteaway.JPG', 
       technology: ['Node.js',
         'Express.js',
         'Handlebars.js',
@@ -23,32 +26,21 @@ function Portfolio() {
         'Sequelize ORM',
         'jQuery',
         'dotenv',],  
-      deployedApp:'https://waste-management-project2.herokuapp.com/',
-      repo:'https://github.com/Group05-Project02/waste-management',
-    },
-    {
-      name: '', 
-      description:'', 
-      image:'', 
-      technology: [],  
-      deployedApp:'',
-      repo:'',
-    },
+      deployedApp: 'https://waste-management-project2.herokuapp.com/',
+      repo:'https://github.com/Group05-Project02/waste-management'
+    }
   ];
   return (
     <section>
-      <div>
-        <h1 className="pageTitle">Portfolio</h1>
-      </div>
         <ul className="flex-row">
           <li>
             <Project projects={projects[0]}></Project>
           </li>
-          <li>
+          {/* <li>
             <Project projects={projects[1]}></Project>
-          </li>
+          </li> */}
         </ul>
-        <ul className="flex-row">
+        {/* <ul className="flex-row">
           <li>
             <Project projects={projects[2]}></Project>
           </li>
@@ -63,10 +55,9 @@ function Portfolio() {
           <li>
             <Project projects={projects[5]}></Project>
           </li>
-        </ul>
-
+        </ul> */}
     </section>
-  )
+  );
 }
 
 export default Portfolio;
