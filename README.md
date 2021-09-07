@@ -1,8 +1,7 @@
-# Getting Started with Create React App
+# React Portfolio
+A responsive portfolio application using React and deployed to Github pages.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+## Deployed Application
 
 In the project directory, you can run:
 
