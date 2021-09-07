@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/sdpercy-portfolio/static/css/main.88fc977a.chunk.css",
+    "main.js": "/sdpercy-portfolio/static/js/main.6b086a25.chunk.js",
+    "main.js.map": "/sdpercy-portfolio/static/js/main.6b086a25.chunk.js.map",
+    "runtime-main.js": "/sdpercy-portfolio/static/js/runtime-main.84bf4b06.js",
+    "runtime-main.js.map": "/sdpercy-portfolio/static/js/runtime-main.84bf4b06.js.map",
+    "static/js/2.3b480f8e.chunk.js": "/sdpercy-portfolio/static/js/2.3b480f8e.chunk.js",
+    "static/js/2.3b480f8e.chunk.js.map": "/sdpercy-portfolio/static/js/2.3b480f8e.chunk.js.map",
+    "static/js/3.f55c19bb.chunk.js": "/sdpercy-portfolio/static/js/3.f55c19bb.chunk.js",
+    "static/js/3.f55c19bb.chunk.js.map": "/sdpercy-portfolio/static/js/3.f55c19bb.chunk.js.map",
+    "index.html": "/sdpercy-portfolio/index.html",
+    "static/css/main.88fc977a.chunk.css.map": "/sdpercy-portfolio/static/css/main.88fc977a.chunk.css.map",
+    "static/js/2.3b480f8e.chunk.js.LICENSE.txt": "/sdpercy-portfolio/static/js/2.3b480f8e.chunk.js.LICENSE.txt",
+    "static/media/2021 Twitter logo - white.27cda7bd.png": "/sdpercy-portfolio/static/media/2021 Twitter logo - white.27cda7bd.png",
+    "static/media/budgetracker.png": "/sdpercy-portfolio/static/media/budgetracker.e90dcedf.png",
+    "static/media/final_resume2021_01-20.pdf": "/sdpercy-portfolio/static/media/final_resume2021_01-20.4d4d62e4.pdf",
+    "static/media/mainpage.JPG": "/sdpercy-portfolio/static/media/mainpage.9a68ec8f.JPG",
+    "static/media/nature.jpg": "/sdpercy-portfolio/static/media/nature.1404e673.jpg",
+    "static/media/notetaker.png": "/sdpercy-portfolio/static/media/notetaker.0e8fd853.png",
+    "static/media/profile_pic.jpg": "/sdpercy-portfolio/static/media/profile_pic.f55a75db.jpg",
+    "static/media/run_buddy_website.jpg": "/sdpercy-portfolio/static/media/run_buddy_website.b82b4c7f.jpg",
+    "static/media/wasteaway.JPG": "/sdpercy-portfolio/static/media/wasteaway.610ac79e.JPG",
+    "static/media/weatherdashboard.png": "/sdpercy-portfolio/static/media/weatherdashboard.939baa08.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.84bf4b06.js",
+    "static/js/2.3b480f8e.chunk.js",
+    "static/css/main.88fc977a.chunk.css",
+    "static/js/main.6b086a25.chunk.js"
+  ]
+}
