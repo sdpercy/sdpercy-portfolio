@@ -3,15 +3,11 @@ A responsive portfolio application using React and deployed to Github pages.
 
 ## Deployed Application
 
-In the project directory, you can run:
+https://sdpercy.github.io/sdpercy-portfolio/
 
-### `npm start`
+## ScreenShots
+![image](https://user-images.githubusercontent.com/78440638/132274619-596cfd98-a583-4079-b2ad-2dcaa03bf232.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 ### `npm test`
 
