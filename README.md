@@ -6,7 +6,8 @@ A responsive portfolio application using React and deployed to Github pages.
 https://sdpercy.github.io/sdpercy-portfolio/
 
 ## ScreenShots
-![image](https://user-images.githubusercontent.com/78440638/132274619-596cfd98-a583-4079-b2ad-2dcaa03bf232.png)
+![tempsnip](https://user-images.githubusercontent.com/78440638/132274898-cf76dae4-06d9-42df-bb24-e24381b35eff.png)
+
 
 
 ### `npm test`
